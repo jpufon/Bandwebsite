@@ -1,0 +1,27 @@
+{
+    "albums": [{
+        "name": "Earth, Wind & Fire",
+        "shortname": "EarthWindFire",
+        "albumname" : "Earth, Wind & Fire (Debut Album)",
+        "summary" : "Earth, Wind & Fire's eponymous debut album was released in 1971 and marked the beginning of their illustrious career. The album features a mix of funk, soul, and jazz influences, with songs that showcase the band's tight musicianship and inventive songwriting",
+        "artwork": ["EarthWindFire_ES.jpg "],
+        "tracklist": "1. Help Somebody<br>2. Moment Of Truth<br>3. Love Is Life<br>4. Fan The Fire<br>5. C'mon Children<br>6. This World Today<br>7. Bad Tune<br>"
+        
+    },{
+        "name": "Earth, Wind & Fire",
+        "shortname": "Love",
+        "albumname" : "The Need Of Love",
+        "summary": "The Need of Love is the second album by Earth, Wind & Fire, released in 1971. The album features a more polished sound than their debut and explores themes of love, spirituality, and social consciousness. Tracks like I Think About Lovin You and Energy showcase the band's evolving style and musical vision.",
+        "artwork": ["Love_ES.jpg"],
+        "tracklist": "1. Energy<br>2. Beauty<br>3. I Can Feel It In My Bones <br>4. I Think About Lovin' You<br>5. Everything Is Everything"
+       
+    },{
+        "name": "Earth, Wind & Fire",
+        "shortname": "time",
+        "albumname" : "Last Days And Time ",
+        "summary": "Last Days and Time is Earth, Wind & Fire's third album, released in 1972. The album continues the band's exploration of funk, jazz, and soul music and features the hit single Mighty Mighty. The album also showcases the band's growing musical ambition and experimentation, setting the stage for their later successes.",
+        "artwork" : ["time_ES.jpg"],
+        "tracklist": "1.Time Is On Your Side<br>2. They Don't See<br>3. Make It With You<br>4. Power<br>5. Remember The Children<br>6. Where Have All The Flowers Gone<br>7. I'd Rather Have You<br>8. Mom"
+        
+    }]
+}

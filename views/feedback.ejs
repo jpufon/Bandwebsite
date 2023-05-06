@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Earth <span>Wind & fire</span></h2>
+            <ul>
+                <li><a href="index">Home</a></li>
+                <li><a href="albums">Albums</a></li>
+                <li><a href="feedback">Contact us</a></li>
+                <li><a href="#">chatroom</a></li>
+            </ul>
+        </nav>
+   
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1 class="feedback-form-title">Send us feedback</h1>
+                    <form class="feedback-form">
+                        <div class="form-group">
+                            <label for="feedback-form-name">Name</label>
+                            <input name="name" type="text" class="form-control" id="feedback-form-name" placeholder="Enter your name">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="feedback-form-title">Title</label>
+                            <input name="title" type="text" class="form-control" id="feedback-form-title"
+                                placeholder="Title of your feedback">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="feedback-form-message">Message</label>
+                            <textarea name="message" type="text" placeholder="Enter your message, then hit the submit" class="form-control"
+                                id="feedback-form-message" rows="6"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default pull-right">Submit</button>
+                    </form>
+                </div><!-- primary -->
+                <aside class="col-sm-8">
+                    <div class="maincontent feedback">
+                        <h2 class="article-title">Recent Feedback</h2>
+                        <div class="feedback-messages">
+    
+                        </div>
+                    </div>
+                </aside><!-- secondary -->
+            </div>
+        </div>
+    </div>
+
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+        <script src="/js/feedbackClient.js"></script>
+</body>
+</html>

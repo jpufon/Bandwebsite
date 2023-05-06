@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="hero">
+  <nav>
+    <h2 class="logo">Earth <span>Wind & fire</span></h2>
+    <ul>
+      <li><a href="index">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Albums</a>
+        <div class="dropdown-content">
+          <a href="#">Album 1</a>
+          <a href="#">Album 2</a>
+          <a href="#">Album 3</a>
+        </div>
+      </li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">chatroom</a></li>
+    </ul>
+  </nav>
+</div>
+    <!-- <div class="dropdown">
+        <button class="dropbtn">Albums</button>
+        <div class="dropdown-content">
+          <a href="#" class="album-name" data-album="album1">Album 1</a>
+          <a href="#" class="album-name" data-album="album2">Album 2</a>
+          <a href="#" class="album-name" data-album="album3">Album 3</a>
+        </div>
+      </div> -->
+
+
+      <div class="albums-container">
+        <% albumsData.forEach(function(album) { %>
+            <div class="album-info">
+                <img src="/images/<%= album.artwork[0] %>">
+                <h2><%= album.albumname %></h2>
+                <p><%= album.summary %></p>
+                <ul>
+                    <% album.tracklist.split('<br>').forEach(function(song) { %>
+                        <li><%= song.trim() %></li>
+                    <% }); %>
+                </ul>
+            </div>
+        <% }); %>
+    </div>
+      
+     
+      <script>const dropbtn = document.querySelector('.dropbtn');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+dropbtn.addEventListener('click', () => {
+  dropdownContent.classList.toggle('show');
+});</script>
+</body>
+</html>
