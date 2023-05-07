@@ -1,16 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing:border-box;
     font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
 
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
+  
+}
+
 .hero{
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/background_01.jpg);
     background-size: cover;
     background-position: center;
+    
 }
 nav{
     display: flex;
@@ -54,7 +70,27 @@ nav ul li a:hover{
     margin: 1% color;
     background-color: beige;
   }
+  .quote {
+    text-align: center ;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+   position: absolute;
+    bottom: 300px; /* align to the bottom of the page */
+    left: 0; /* align to the left side of the page */
+    right: 0;
+  }
   
+  .quote p {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+  }
   .album-info {
     flex: 1;
     margin: 10px;
@@ -111,14 +147,11 @@ nav ul li a:hover{
     display: block;
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
+    padding: 2px 10px;
   }
   
   /* Style the dropdown content links on hover */
-  .dropdown-content a:hover {
-    background-color: tomato;
-  }
-  
+ 
   /* Show the dropdown content when the dropdown button is clicked */
   .dropdown:hover .dropdown-content {
     display: block;
@@ -178,22 +211,35 @@ nav ul li a:hover{
   h2.article-title{
     padding: 0 0 0 4rem;
     margin-top: 0%;
+    
+    position: relative; /* set position to relative or absolute */
+    left: -180px; /* shift 50 pixels to the right */
+    bottom: 0px;
+    font-weight: 700;
   }
   h1.feedback-form-title{
-    padding-top: 4rem;
- 
+  
+    position: relative; /* set position to relative or absolute */
+    left: 50px; /* shift 50 pixels to the right */
+    bottom: -30px;
+  
+  }
+  div.feedback-item.media{
+    margin-bottom:0px;
+    width: 50%;
   }
 
   .feedback-messages {
-    background-color: #fff;
+    
     border: 0px ;
     border-radius: 4px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+    /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.9); */
     color: #333;
     font-size: 16px;
     line-height: 2;
     padding: 0 5px 5px 5px;
     width: 70%;
+    margin-bottom:0px;
   }
 
   /* delete button  */
@@ -215,6 +261,178 @@ nav ul li a:hover{
 
 
 
-  /* --------------------- */
+  /* -----------chat enngine---------- */
+  .title {
+    margin: 20px 0;
+    margin-left: 420px;
+    
+  }
+  
+  .main {
+    border: 4px solid #dddddd;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 408px;
+     margin-left: 300px;
 
+   
+  }
+  
+  .name {
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px;
+    color: #7e7e7e;
+    background-color: #ebebeb;
+  }
+  
+  .name > span {
+    color: #bbb;
+  }
+  
+  .name-input {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7e7e7e;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: #ebebeb;
+  }
+  
+  .message-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    width: 400px;
+    height: 400px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .message-left,
+  .message-right {
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+  
+  .message-left {
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    background-color: #fff;
+    box-shadow: -2px 2px 4px #dcdcdc;
+  }
+  
+  .message-right {
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color: #2d2d2d;
+    box-shadow: 2px 2px 4px #dcdcdc;
+    color: #f6f6f6;
+  }
+  
+  .message-left > p > span,
+  .message-right > p > span {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .feedback {
+    font-style: italic;
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    color: #2d2d2d;
+    text-align: center;
+  }
+  
+  .message-form {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+  
+  .message-input {
+    flex-grow: 1;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    background-color: #fff;
+  }
+  
+  .send-button {
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    padding: 0px 20px;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .v-divider {
+    height: 48px;
+    width: 2px;
+    background-color: #f6f6f6;
+  }
+  
+  .clients-total {
+    margin: 20px 0;
+    color:  #f6f6f6;
+    margin-left: 310px;
+  }
+
+  
+
+  .feedback-item {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-item .media-left {
+    margin-right: 10px;
+  }
+  
+  .feedback-info {
+    border-radius: 20px;
+    background-color: #e6ecf0;
+    padding: 10px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .feedback-info:after {
+    border-right: 10px solid #e6ecf0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+  }
+  
+  .feedback-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .feedback-message {
+    margin-top: 5px;
+  }
+  
+  .feedback-time {
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+  }
   
