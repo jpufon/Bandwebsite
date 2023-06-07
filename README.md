@@ -30,7 +30,7 @@ once the repo is clone run "npm install"-install all dependecies
 
 ## Authors
 
-  - **Billie Thompson** - Jordan Pufon
+ - **Jordan Pufon** 
 
 ## Acknowledgments
 
